@@ -2,8 +2,11 @@
 We reared the snails isolated, paired and grouped with five individuals. At the end of experiment, we collected their PG to screen differentially expressed transcripts.
 
 ## Data 
+Deposted in NCBI
+
 
 ## Methods 
+### Making the reference PG transcriptome 
 1. Quality control using FastQC and MultiQC
 ```
 for file in *.fastq
@@ -29,4 +32,12 @@ do
 done 
 ```
 3. Run Trinity for assembly (trinity.sh)
-4. 
+4. Add the sample-specific prefix and merged all the data (prefix.combine.sh)
+5. Run transDecoder and hmmer for finding ORFs and proteins domains (xxx).
+6. remove the dupulicated transcripts
+7. Run BUSCO
+
+### Screening differentially expressed transcripts between different mating conditions 
+1. run Salmon for quantification
+2. run DEseq2 to calculate LFCs
+3. Select the trascripts which increased the expression when they had a mate(s) (xxx)
