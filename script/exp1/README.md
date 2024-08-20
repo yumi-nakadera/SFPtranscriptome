@@ -29,3 +29,4 @@ find . -depth -name "*.gz" -exec sh -c 'f="{}"; mv -- "$f" "${f%.gz}"' \;
 4. Calculate LFCs using DEseq2 (DE_PGspecific.R)
 
 ## Fig
+Fig.2.R
