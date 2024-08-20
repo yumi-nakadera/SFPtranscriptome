@@ -2,8 +2,8 @@
 We reared the snails isolated, paired and grouped with five individuals. At the end of experiment, we collected their PG to screen differentially expressed transcripts.
 
 ## Data 
-Deposted in NCBI
-
+RNAseq Deposted in NCBI
+The reference genome (Koene et al. in subm., NCBI)
 
 ## Methods 
 ### Making the reference PG transcriptome 
