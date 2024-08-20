@@ -26,6 +26,6 @@ find . -depth -name "*.gz" -exec sh -c 'f="{}"; mv -- "$f" "${f%.gz}"' \;
 1. Align using HISAT2 (hisat.sh)
 2. convert and sort using samtool (samtools.sh)
 3. Run QualiMap (qualimap.sh)
-4. Calculate LFCs using DEseq2 
+4. Calculate LFCs using DEseq2 (DE_PGspecific.R)
 
 ## Fig
