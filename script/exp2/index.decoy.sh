@@ -1,14 +1,4 @@
 #!/bin/bash
-#SBATCH --job-name=index.decoy
-#SBATCH -p defq
-#SBATCH --ntasks-per-node=1
-#SBATCH --nodes=1
-#SBATCH -c 12
-#SBATCH --mem=30G
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=y.nakadera@vu.nl
-#SBATCH -o %x_%A.out
-#SBATCH -e %x_%A.err
 
 module load salmon
 
