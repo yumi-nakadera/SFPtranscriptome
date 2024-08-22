@@ -70,5 +70,4 @@ do
 done
 ```
 
-2. run DEseq2 to calculate LFCs
-3. Select the trascripts which increased the expression when they had a mate(s) (xxx)
+2. run DEseq2 to calculate LFCs, and select the trascripts which increased the expression when they had a mate(s) (DEseq2.R)
