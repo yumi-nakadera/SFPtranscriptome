@@ -5,6 +5,24 @@ We reared the snails isolated, paired and grouped with five individuals. At the 
 RNAseq Deposted in NCBI
 The reference genome (Koene et al. in subm., NCBI)
 
+```
+Ls_01   Isolated
+Ls_02   Isolated
+Ls_03   Paired
+Ls_04   Paired
+Ls_05   Grouped
+Ls_06   Isolated
+Ls_07   Paired
+Ls_08   Paired
+Ls_09   Grouped
+Ls_10   Grouped
+Ls_11   Grouped
+Ls_12   Isolated
+Ls_13   Isolated
+Ls_14   Paired
+Ls_15   Grouped
+```
+
 ## Methods 
 ### Making the reference PG transcriptome 
 1. Quality control using FastQC and MultiQC
