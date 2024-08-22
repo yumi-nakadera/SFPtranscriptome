@@ -51,11 +51,24 @@ done
 ```
 3. Run Trinity for assembly (trinity.sh)
 4. Add the sample-specific prefix and merged all the data (prefix.combine.sh)
-5. Run transDecoder and hmmer for finding ORFs and proteins domains (xxx).
-6. remove the dupulicated transcripts
-7. Run BUSCO
+5. Run transDecoder and hmmer for finding ORFs and proteins domains (transdecoder.sh, hmmer.sh, transdecoder2.sh).
+6. remove the dupulicated transcripts (vsearch.sh)
+7. Run BUSCO (busco.sh)
 
 ### Screening differentially expressed transcripts between different mating conditions 
-1. run Salmon for quantification
+1. run Salmon for quantification (index.decoy.sh, then the following)
+```
+conda activate salmon
+
+for i in ../02_Trimming/*.1_trimmed.fastq.gz
+do
+   prefix=$(basename $i .1_trimmed.fastq.gz)
+   salmon quant -i decoy.index/salmon_index -l A \
+          -1 ../02_Trimming/${prefix}.1_trimmed.fastq.gz \
+		-2 ../02_Trimming/${prefix}.2_trimmed.fastq.gz \
+		-o quant/${prefix} --validateMappings --seqBias --useVBOpt --gcBias > ${prefix}.output.txt;
+done
+```
+
 2. run DEseq2 to calculate LFCs
 3. Select the trascripts which increased the expression when they had a mate(s) (xxx)
