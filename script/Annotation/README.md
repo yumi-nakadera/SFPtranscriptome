@@ -7,7 +7,7 @@ PG specific transcripts from Exp1
 # Methods 
 1. run Trinotate, SignalP and TargetP (Trinotate https://github.com/Trinotate/Trinotate.github.io/wiki)
 2. select the target transcripts based on signal peptides and tissue specificity 
-3. run InterProScan on target proteins
+3. run InterProScan on the target proteins
 ```
 docker run --rm \
 --platform linux/amd64 \
